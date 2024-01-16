@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/add.css">
+    <title>Add books owner page</title>
+</head>
+<body>
+    <header id="masthead">
+        <h1>MYTHRI DANTU</h1>
+        <h2>ADD A NEW BOOK</h2>
+    </header>
+
+    <form action="/add" method="post">
+        <div class="container">
+            <div class="box">
+                <label for="bookTitle"><b>Book Title - Author: </b></label>
+                <input type="text" name="title" autocomplete="off">
+            </div>
+            <div class="box">
+                <label for="bookDate"><b>Date of Entry: </b></label>
+                <input type="text" name="date" id="" autocomplete="off">
+            </div>
+            <div class="box">
+                <label for="bookRating"><b>Rating /10: </b></label>
+                <input type="text" name="rating" id="" autocomplete="off">
+            </div>
+            <div class="box">
+                <label for="bookDesc"><b>Description: </b></label>
+                <textarea cols="30" rows="50" name="description" id="" autocomplete="off" class="bigger"></textarea>
+            </div>
+            <div class="box">
+                <label for="bookValue"><b>10 digit value: </b></label>
+                <input type="text" name="value" id="" autocomplete="off">
+            </div>
+            <button type="submit" class="btn">Post</button>
+        </div>
+    </form>
+</body>
+</html>

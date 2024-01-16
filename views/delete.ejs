@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/delete.css">
+    <title>Delete owner page</title>
+</head>
+<body>
+    <header id="masthead">
+        <h1>MYTHRI DANTU</h1>
+        <h2>DELETE</h2>
+    </header>
+
+    <form action="/delete" method="post">
+        <div class="container">
+            <label for="bookId"><b>Enter the id of the book you want to delete.</b><br>
+                Refer to pgAdmin - SELECT * FROM books </label>
+            <input type="text" name="Id" required autocomplete="off">
+            <button class="btn" type="submit"> Delete</button>
+        </div>
+    </form>
+    
+</body>
+</html>

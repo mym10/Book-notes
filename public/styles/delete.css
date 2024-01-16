@@ -1,0 +1,36 @@
+html {
+    background-color: #43766C;
+    color: #ffeecd;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    max-width: 40em;
+    margin: 0 auto;
+    padding: 5px;
+    font-family: Georgia,serif;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #43766C;
+    color: #ffeecd;
+}
+.btn {
+    display: block;
+    background-color: #ffeecd;
+    border-radius: 3px;
+    width: 15%;
+    height: 25px;
+    border: none;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+input{
+    width: 30%;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Book notes</title>
+</head>
+
+<body>
+    <header id="masthead">
+        <h1>MYTHRI DANTU</h1>
+    </header>
+    <main>
+        <header>
+            <h1>Books I've read</h1>
+            <p>A tiny but a detailed notes for each non-fiction book I've read. This page will constantly update, so
+                bookmark it if you want to check it out.<br>
+                High rated books are on top.</p>
+        </header>
+        <!-- <div class="sorters">
+            <form action="/submit" method="post">
+                <label for="order">Sort the books:</label>
+                <select name="order" id="order">
+                    <option value="newest">Newest</option>
+                    <option value="title">Title</option>
+                    <option value="best">Best</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div> -->
+        <hr>
+
+        <div class="allbooks">
+            <% books.forEach(book => { %>
+                <div class="allbook">
+                    <h3><%= book.title %></h3>
+                    <div class="description">
+                        <img src="https://covers.openlibrary.org/b/isbn/<%= book.value_ %>-L.jpg" alt="" height="140px" width="110px">
+                        <p>Date Read: <%= book.date_ %></p>
+                        <p>How strongly I recommend it: <%= book.rating_ %>/10</p>
+                    </div>
+                    <p class="text"><%= book.description_ %></p>
+                </div>
+            <% }); %>
+        </div>
+    </main>
+</body>
+</html>
